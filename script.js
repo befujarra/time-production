@@ -25,11 +25,11 @@ document.getElementById("calcular").addEventListener("click", function () {
     horaTermino = horaTermino % 12 || 12;
   }
 
-  const ampm = horaAtual < 12 ? "AM" : "PM";
+  //const ampm = horaAtual < 12 ? "AM" : "PM";
 
   document.getElementById(
     "resultado"
   ).innerText = `A produção irá terminar às ${horaTermino}:${
     minutosTermino < 10 ? "0" : ""
-  }${minutosTermino % 60} ${ampm}`;
+  }${minutosTermino % 60}`;
 });
