@@ -3,6 +3,12 @@
   font-family: Arial, sans-serif;
 }
 
+nav div ul{
+  font-size: 25px;
+}
+nav div ul li:hover{
+  background-color: #007bff;
+}
 .container {
   display: flex;
   flex-direction: column;
