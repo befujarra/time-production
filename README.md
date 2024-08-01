@@ -20,10 +20,3 @@ Este projeto é uma aplicação web para calcular o tempo de produção de uma m
 ### Pré-requisitos
 
 Certifique-se de ter um navegador moderno instalado, como Google Chrome, Mozilla Firefox ou Microsoft Edge.
-
-### Instalação
-
-1. **Clone o Repositório**
-
-   ```bash
-   git clone https://github.com/seu-usuario/projeto-kit.git
