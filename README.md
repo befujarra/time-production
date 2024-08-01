@@ -1,7 +1,6 @@
 # Projeto KIT
 
-Este projeto é uma aplicação web para calcular o tempo de produção de uma máquina e exibir os resultados em cards interativos. Utiliza HTML, CSS, JavaScript e Bootstrap para a interface.
-
+Este projeto é uma aplicação web para calcular o tempo de produção de uma máquina e exibir os resultados em cards interativos.
 ## Funcionalidades
 
 - **Cálculo de Tempo de Produção**: Permite ao usuário inserir o nome da máquina, a quantidade de bisnagas e a velocidade da máquina para calcular o tempo total de produção.
