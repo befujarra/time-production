@@ -4,23 +4,139 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Tempo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>KIT</title>
   </head>
-  <body></body>
-  <body>
-    <div class="card">
-      <h1>Tempo de Produção</h1>
-      <form id="calculadoraForm">
-        <label for="qtdBisnagas">Quantidade de Bisnagas: </label>
-        <input type="number" id="qtdBisnagas" name="qtdBisnagas" required />
+  <body class="body-style" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalS1">S1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLV">LV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalC2">C2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalC3">C3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-5 pt-5 d-flex justify-content-center">
+      <div class="card text-center">
+        <h1>Tempo de Produção</h1>
+        <form id="calculadoraForm">
+          <label for="nomeMaq">Nome da Máquina:</label>
+          <input type="text" id="nomeMaq" name="nomeMaq" required />
 
-        <label for="velocidadeMaq">Velocidade da Máquina:</label>
-        <input type="number" id="velocidadeMaq" name="velocidadeMaq" required />
+          <label for="qtdBisnagas">Quantidade de Bisnagas: </label>
+          <input type="number" id="qtdBisnagas" name="qtdBisnagas" required />
 
-        <button type="button" id="calcular">Fazer Cálculo</button>
-      </form>
-      <p id="resultado"></p>
+          <label for="velocidadeMaq">Velocidade da Máquina:</label>
+          <input type="number" id="velocidadeMaq" name="velocidadeMaq" required />
+
+          <button type="button" id="calcular">Fazer Cálculo</button>
+        </form>
+        <p id="resultado"></p>
+      </div>
     </div>
+    <div class="container mt-3">
+      <div id="cardsContainer" class="d-flex flex-wrap"></div>
+    </div>
+
+    <!-- Modals -->
+    <!-- Modal S1 -->
+    <div class="modal fade" id="modalS1" tabindex="-1" role="dialog" aria-labelledby="modalS1Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalS1Label">S1</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Nome da máquina: S1</p>
+            <p>Link de formulário: <a href="#">Formulário S1 - fm-019904  folha 1-4</a></p>
+            <p>Chaves necessárias na troca: <br>Chave de boca - 19, 17, 13, 10 <br> allen 5 e 4</p>
+            <p>Observações: Bomba pequena para oleo e antimosquito <br>Se for oléo, alcool e secar com AR <br> bicos com saída pra mangueirinha <br>tubulação curvada e valvula com um lado maior <br>Produto com 5 bombas:????? <br>Produtos sem arraste: ????<br><br> sequencia de bombas 400ml: <br>1005, madic, 1006 ,1004 ,1001, 04 <br> ou 01, 02, 1002, 1003, 03, 05 <br>
+              <br>DESMONTAR:  Desconecta mangueiras dos bicos, retira os bicos, desconecta mangueiras das bombas. Vá para parte de trás, desconecte as mangueiras da bomba, cabo do sensor etc remova o tanquinho, retire as bombas. 
+             <br> <br>MONTAR: coloque o sensor no tanquinho limpo <br> coloque as bombas seguindo a sequencia, aproxime o tanquinho, conecte o cabo do sensor, as mangueiras e etc, vá para frente, conecte as mangueiras na bomba, coloque os bicos, conecte as mangueiras nos bicos, arrume o arraste, arrume os bicos conforme o frasco</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal LV -->
+    <div class="modal fade" id="modalLV" tabindex="-1" role="dialog" aria-labelledby="modalLVLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLVLabel">LV</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Nome da máquina: LV</p>
+            <p>Link de formulário: <a href="#">Formulário LV - frm-0006829  folha 1-7</a></p>
+            <p>Chaves necessárias na troca: Chave de boca:13 e 10 <br>Parafusadeira, chave do pistão</p>
+            <p>Observações: <br>Alcool e secar com ar, 1 minuto de enxague <br> Bloco: tampa (com raspador e oring) do bloco 1 e 4 fechado, depois vira e coloca o embulo com a lateral ja virada pra encaixar na maquina, 3 e 2 tampa aberta, aperta os parafusos, vira coloca oring, coloca os copinhos <br> Monta os raspadores e coloca ja posicionado pra colocar na maquina, coloca no bloco, coloca a tampa e parafusa com a parafusadeira <br> BICOS: camisa com o oring dentro, coloca a agulhas, fecha com a outra parte, coloca os orings menores um ao contrario do outro e depois aperta com a peça branca <br>DESMONTAR MAQUINA: Tire as mangueiras do bloca, retire os pinos dos raspadores, vai no painel e desce maquina, retire as tubulações e valvula, cabo do sensor e remova o tanquinho, retire as mangueiras do bloca do outro lado junto com os bicos, retire os manipulos com a chapinha e o  bloco inteiro <br>MONTAR: Colocar os blocos descer raspador e colocar pinos, colocar os bicos e mangueiras / conectar no bloco, aproximar tanquinho, tubulaçoes e valvula, cabo do sensor, mangueiras no bloco, ir no painel e trocar receita, inserir pistão, conferir dosagem e ligar maquina acompanhando o tanquinho encher</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal C2 -->
+    <div class="modal fade" id="modalC2" tabindex="-1" role="dialog" aria-labelledby="modalC2Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalC2Label">C2</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Nome da máquina: C2</p>
+            <p>Link de formulário: <a href="#">Formulário C2 - fm-019919  folha 1-5</a></p>
+            <p>Chaves necessárias na troca: <br> Chave de boca: 17, 13 e 8</p>
+            <p>Observações: Utiliza mangueira <br> BLOCO: <br> BICO: <br>Desmontar: <br>Montar:</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal C3 -->
+    <div class="modal fade" id="modalC3" tabindex="-1" role="dialog" aria-labelledby="modalC3Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalC3Label">C3</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Nome da máquina: C3</p>
+            <p>Link de formulário: <a href="#">Formulário C3 - fm-019919  folha 1-5</a></p>
+            <p>Chaves necessárias na troca: <br> Chave de boca: 17, 13, 8, allen 8 e fenda</p>
+            <p>Observações: <br> BLOCO: <br> BICO (hora de lavar volta 1,5 a 2 voltas e aperta ): <br>Desmontar: <br>Montar:</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
