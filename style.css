@@ -3,25 +3,32 @@
   font-family: Arial, sans-serif;
 }
 
-nav div ul{
-  font-size: 25px;
-}
+
 nav div ul li:hover{
   background-color: #007bff;
 }
+
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  align-items:center;
+  justify-content: space-around;
 }
-
+ body div h1{
+  font-size: 30px;
+  font-weight: bolder;
+ }
+ body div form button{
+  font-size: 20px;
+  font-weight: bolder;
+ }
 .card {
+  margin-top: 30px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 40vh;;
+  width: 400px;
   text-align: center;
 }
 
@@ -34,7 +41,7 @@ form {
 
 label {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 input {
@@ -66,4 +73,84 @@ button:hover {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+}
+
+.card-title{
+  font-size: 20px;
+}
+.card-text{
+  font-size: 20px;
+}
+.nav-link{
+font-size: 25px;
+margin-left: 30px;
+margin-right: 30px;
+}
+
+  .modal-title{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+@media only screen and (min-width: 1080px) and (max-width: 1080px) and (min-height: 2400px) and (max-height: 2400px) {
+  .body-style {
+    background-color: #252525;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  nav div ul li:hover{
+    background-color: #007bff;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+  }
+   body div h1{
+    font-size: 35px;
+    font-weight: bolder;
+   }
+   body div form button{
+    font-size: 30px;
+    font-weight: bold;
+   }
+  .card {
+    margin-top: 35px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30vh;
+    text-align: center;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+
+  .card-title{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .card-text{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .nav-link{
+  font-size: 35px;
+  margin-left: 30px;
+  margin-right: 30px;
+  }
+  .modal-content{
+    font-size: 30px;
+  }
+  .modal-title{
+    font-size: 30px;
+    font-weight: bold;
+  }
 }

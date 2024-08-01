@@ -55,13 +55,13 @@ function saveCardToLocalStorage(cardData) {
 function createCard(cardData) {
   const card = document.createElement("div");
   card.className = "card m-2";
-  card.style.width = "18rem";
+  card.style.width = "20rem";
   card.innerHTML = `
     <div class="card-body">
       <h5 class="card-title">Máquina: ${cardData.nomeMaq}</h5>
-      <p class="card-text">Quantidade de Bisnagas: ${cardData.qtdBisnagas}</p>
-      <p class="card-text">Velocidade da Máquina: ${cardData.velocidadeMaq}</p>
-      <p class="card-text">Tempo de Produção: ${cardData.horasProducao} horas e ${cardData.minutosRestantes} minutos</p>
+      <p class="card-text">Quantidade: ${cardData.qtdBisnagas}</p>
+      <p class="card-text">Velocidade: ${cardData.velocidadeMaq}</p>
+      <p class="card-text">Tempo: ${cardData.horasProducao} horas e ${cardData.minutosRestantes} minutos</p>
       <p class="card-text">Hora de Término: ${cardData.horaTermino}:${cardData.minutosTermino < 10 ? '0' : ''}${cardData.minutosTermino} ${cardData.ampm}</p>
       <button class="btn btn-danger btn-sm remover-card">Remover</button>
     </div>
